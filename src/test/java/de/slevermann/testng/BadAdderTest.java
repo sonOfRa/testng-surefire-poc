@@ -26,4 +26,14 @@ public class BadAdderTest {
     public void testAddBadly(int a, int b) {
         assertEquals(badAdder.addBadly(a, b), a + b);
     }
+
+    @Test
+    public void testAddBadlyNoParams() {
+        assertEquals(badAdder.addBadly(10, 4), 10 + 4);
+    }
+
+    @Test
+    public void testAddBadlyNoParamsAgain() {
+        assertEquals(badAdder.addBadly(1,4), 1 + 4);
+    }
 }
